@@ -32,7 +32,7 @@ Route::group(['middleware' => ['auth']], function () {
     // Route::resource('users', UserController::class);
     // Route::resource('products', ProductController::class);
 
-    Route::resource('roles', 'App\Http\Controllers\RoleController');
+    Route::resource('roles', 'App\Http\Controllers\RoleController')->middleware('role:writer');
     Route::resource('users', 'App\Http\Controllers\UserController');
     Route::resource('products', 'App\Http\Controllers\ProductController');
 });

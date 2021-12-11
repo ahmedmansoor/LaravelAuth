@@ -21,10 +21,10 @@ class RoleTableSeeder extends Seeder
             // array('name' => 'Finance Executive',        'guard_name' => 'all finance',              'desc' => 'Who authorize all kinds of requests', 'slug' => 'finance-executive'),
             // array('name' => 'Budget secretariat',       'guard_name' => 'all budget',               'desc' => 'Who does all budget secretariat works', 'slug' => 'budget-secretariat'),
 
-            array('name' => 'Administrator',            'guard_name' => 'all permissions'),
-            array('name' => 'Accounts Officer',         'guard_name' => 'all accounts'),
-            array('name' => 'Finance Executive',        'guard_name' => 'all finance'),
-            array('name' => 'Budget secretariat',       'guard_name' => 'all budget'),
+            array('name' => 'Administrator',            'guard_name' => 'web'),
+            array('name' => 'Accounts Officer',         'guard_name' => 'web'),
+            array('name' => 'Finance Executive',        'guard_name' => 'web'),
+            array('name' => 'Budget secretariat',       'guard_name' => 'web'),
         );
         DB::table('roles')->insert($roles);
     }
